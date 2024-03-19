@@ -1,0 +1,27 @@
+package facebookLogin;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class ReverseSentence {
+
+	public static void main(String[] args) throws Exception{
+
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter the sentence to reverse");
+		String sentence = scn.next();
+		StringBuilder sb = new StringBuilder();
+
+		StringTokenizer st = new StringTokenizer(sentence," ");
+		
+		System.out.println(st.countTokens());
+
+		for (int i = st.countTokens(); i > 0; i--) {
+			sb = sb.append(st.nextToken()).append(" ");
+		}
+
+		System.out.println(sb.toString().trim());
+		scn.close();
+	}
+
+}
