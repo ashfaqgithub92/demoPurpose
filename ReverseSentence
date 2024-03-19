@@ -7,6 +7,8 @@ public class ReverseSentence {
 
 	public static void main(String[] args) throws Exception{
 
+// This is to reverse the given sentence
+// This is a second change
 		Scanner scn = new Scanner(System.in);
 		System.out.println("Enter the sentence to reverse");
 		String sentence = scn.next();
